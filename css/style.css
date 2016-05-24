@@ -1,19 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600,500,400,200);
+
+/* Generic Setup */
+body {
+	font-family: "Raleway", sans-serif;
+	color: #2d3c49;
+}
+
 h1, h2, h4 {
 	text-transform: uppercase;
 }
 
-.logo {
-	max-width: 100%;
+h1 {
+	font-weight: 200;
+	font-size: 5vw;
+	margin: 5px 0;
 }
 
-.slider-img {
+h2 {
+	font-weight: 600;
+	font-size: 2vw;
+	margin: 5px;
+}
+
+h3 {
+	margin: auto 15px;
+	color: #7d97ad;
+	font-weight: 600;
+	font-size: 2.5vw;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 2.8vw;
+	margin: 0;
+	padding: 10px 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:active, a:focus {
+	color: #7d97ad;
+	text-decoration: none;
+}
+
+/* Utility Classes */
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.img-responsive {
+	/* Extend the Bootstrap responsive image class to center images */
+	margin: 0 auto;
+}
+
+/* Specific Classes */
+
+.logo {
 	max-width: 100%;
+	margin: 0;
+}
+
+#slider {
+	margin-bottom: 15px;
 }
 
 .splash-img {
 	max-width: 100%;
 }
 
+.project-url {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 1.5vw;
+}
+
+/* Advanced */
+/* Make column padding smaller */
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12  {
 	padding: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 8vw;
+	}
+
+	h2 {
+		font-size: 3vw;
+	}
+
+	h3 {
+		font-size: 5.5vw;
+	}
+
+	h4 {
+		font-size: 5.8vw;
+	}
+
+	.project-url {
+		font-size: 3vw;
+	}
 }

@@ -15,11 +15,12 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="row">
-				<div class="col-sm-6 col-xs-3">
-					<img class="logo" src="http://placehold.it/100x100" alt="Udacity Logo">
+			<header class="row vertical-center">
+				<div class="col-md-6 col-xs-3">
+					<!-- TODO: Make 2x logo -->
+					<a href="http://superlinkx.com/udacity"><img class="logo img-responsive" src="http://placehold.it/80x80" alt="Udacity Logo"></a>
 				</div>
-				<div class="col-sm-6 col-xs-9 text-right">
+				<div class="col-md-6 col-xs-9 text-right">
 					<h1>Steven Holms</h1>
 					<h2>Full Stack Oracle</h2>
 				</div>
@@ -32,8 +33,11 @@
 			<section id="slider" class="row">
 				<div class="col-xs-12 text-center">
 					<picture>
-						<source src="http://placehold.it/1024x400">
-						<img class="slider-img" src="http://placehold.it/1024x400" alt="Slider Scenery">
+						<!-- TODO: Make 2x versions for each slider size -->
+						<source media="(max-width: 480px)" srcset="http://placehold.it/480x206 1x">
+						<source media="(max-width: 767px)" srcset="http://placehold.it/768x329 1x">
+						<source media="(min-width: 768px)" srcset="http://placehold.it/1260x540 1x">
+						<img class="img-responsive slider-img" src="http://placehold.it/1260x540" alt="Slider Scenery">
 					</picture>
 				</div>
 			</section>
@@ -44,29 +48,28 @@
 					</div>
 				</div>
 				<div class="row text-center">
+					<!-- TODO: Possibly convert these images into picture elements that resize. Currently doesn't make enough difference. -->
+					<!-- TODO: Make 2x versions for each image and then use srcset -->
 					<section class="col-sm-4 entry">
-						<picture>
-							<source src="http://placehold.it/350x150">
-							<img class="splash-img" src="http://placehold.it/350x150" alt="Portfolio Splash Image">
-						</picture>
-						<h4>Udacity Portfolio</h4>
-						<span class="project-url text-">https://github.com/superlinkx/udacity-portfolio</span>
+						<a href="https://github.com/superlinkx/udacity-portfolio">
+							<img class="img-responsive splash-img" src="http://placehold.it/350x200" alt="Portfolio Splash Image">
+							<h4>Udacity Portfolio</h4>
+							<span class="project-url text-">https://github.com/superlinkx/udacity-portfolio</span>
+						</a>
 					</section>
 					<section class="col-sm-4 entry">
-						<picture>
-							<source src="http://placehold.it/350x150">
-							<img class="splash-img" src="http://placehold.it/350x150" alt="quickmailer Splash Image">
-						</picture>
-						<h4>quickmailer</h4>
-						<span class="project-url">https://github.com/superlinkx/quickmailer</span>
+						<a href="https://github.com/superlinkx/quickmailer">
+							<img class="img-responsive splash-img" src="http://placehold.it/350x200" alt="quickmailer Splash Image">
+							<h4>quickmailer</h4>
+							<span class="project-url">https://github.com/superlinkx/quickmailer</span>
+						</a>
 					</section>
 					<section class="col-sm-4 entry">
-						<picture>
-							<source src="http://placehold.it/350x150">
-							<img class="splash-img" src="http://placehold.it/350x150" alt="Movie Project Splash Image">
-						</picture>
-						<h4>Udacity Movie Project</h4>
-						<span class="project-url">https://github.com/superlinkx/udacity-movieproject</span>
+						<a href="https://github.com/superlinkx/udacity-movieproject">
+							<img class="img-responsive splash-img" src="http://placehold.it/350x200" alt="Movie Project Splash Image">
+							<h4>Udacity Movie Project</h4>
+							<span class="project-url">https://github.com/superlinkx/udacity-movieproject</span>
+						</a>
 					</section>
 				</div>
 			</section>
