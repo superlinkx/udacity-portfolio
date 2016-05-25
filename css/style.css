@@ -110,3 +110,47 @@ a:hover, a:active, a:focus {
 		font-size: 3vw;
 	}
 }
+
+@media (min-width: 1150px) {
+	h1 {
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-size: 1.3vw;
+	}
+
+	h3 {
+		font-size: 1.7vw;
+	}
+
+	h4 {
+		font-size: 1.9vw;
+	}
+
+	.project-url {
+		font-size: 1.3vw;
+	}
+}
+
+@media (min-width: 2048px) {
+	h1 {
+		font-size: 1.5vw;
+	}
+
+	h2 {
+		font-size: .7vw;
+	}
+
+	h3 {
+		font-size: .9vw;
+	}
+
+	h4 {
+		font-size: 1vw;
+	}
+
+	.project-url {
+		font-size: .7vw;
+	}
+}
