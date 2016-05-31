@@ -4,13 +4,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Steven's Portfolio</title>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 		<!-- TODO: Remove development versions -->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/bootstrap.js"></script>
+
 		<!-- Production versions -->
 		<!--
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.min.css">
+		<script src="js/bootstrap.min.js"></script>
 		-->
 	</head>
 	<body>
@@ -30,15 +36,44 @@
 					<hr>
 				</div>
 			</div>
-			<section id="slider" class="row">
+			<section id="slider-container" class="row">
 				<div class="col-xs-12 text-center">
-					<picture>
-						<!-- TODO: Make 2x versions for each slider size -->
-						<source media="(max-width: 480px)" srcset="http://placehold.it/480x206 1x">
-						<source media="(max-width: 767px)" srcset="http://placehold.it/768x329 1x">
-						<source media="(min-width: 768px)" srcset="http://placehold.it/1260x540 1x">
-						<img class="img-responsive slider-img" src="http://placehold.it/1260x540" alt="Slider Scenery">
-					</picture>
+					<div id="slider" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider" data-slide-to="0" class="active"></li>
+							<li data-target="#slider" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<picture>
+									<!-- TODO: Make 2x versions for each slider size -->
+									<source media="(max-width: 480px)" srcset="http://placehold.it/480x206 1x">
+									<source media="(max-width: 767px)" srcset="http://placehold.it/768x329 1x">
+									<source media="(min-width: 768px)" srcset="http://placehold.it/1260x540 1x">
+									<img class="img-responsive slider-img" src="http://placehold.it/1260x540" alt="Slider Scenery">
+								</picture>
+								<div class="carousel-caption">
+								</div>
+							</div>
+							<div class="item">
+								<picture>
+									<!-- TODO: Make 2x versions for each slider size -->
+									<source media="(max-width: 480px)" srcset="http://placehold.it/480x206 1x">
+									<source media="(max-width: 767px)" srcset="http://placehold.it/768x329 1x">
+									<source media="(min-width: 768px)" srcset="http://placehold.it/1260x540 1x">
+									<img class="img-responsive slider-img" src="http://placehold.it/1260x540" alt="Slider Scenery">
+								</picture>
+							</div>
+							<div class="carousel-caption">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+							<span class="icon-prev" aria-hidden="true"></span>
+						</a>
+						<a class="right carousel-control" href="#slider" role="button" data-slide="next">
+							<span class="icon-next" aria-hidden="true"></span>
+						</a>
+					</div>
 				</div>
 			</section>
 			<section id="featured">

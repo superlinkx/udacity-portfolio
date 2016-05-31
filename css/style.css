@@ -65,7 +65,7 @@ a:hover, a:active, a:focus {
 	margin: 0;
 }
 
-#slider {
+#slider-container {
 	margin-bottom: 15px;
 }
 
@@ -111,46 +111,25 @@ a:hover, a:active, a:focus {
 	}
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1170px) {
+	/* Max-size created to prevent scaling beyond Bootstrap parameters */
 	h1 {
-		font-size: 3vw;
+		font-size: 42px;
 	}
 
 	h2 {
-		font-size: 1.3vw;
+		font-size: 18px;
 	}
 
 	h3 {
-		font-size: 1.7vw;
+		font-size: 23px;
 	}
 
 	h4 {
-		font-size: 1.9vw;
+		font-size: 26px;
 	}
 
 	.project-url {
-		font-size: 1.3vw;
-	}
-}
-
-@media (min-width: 2048px) {
-	h1 {
-		font-size: 1.5vw;
-	}
-
-	h2 {
-		font-size: .7vw;
-	}
-
-	h3 {
-		font-size: .9vw;
-	}
-
-	h4 {
-		font-size: 1vw;
-	}
-
-	.project-url {
-		font-size: .7vw;
+		font-size: 18px;
 	}
 }
