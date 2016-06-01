@@ -34,7 +34,7 @@ h4 {
 	font-weight: 400;
 	font-size: 35px;
 	margin: 0;
-	padding: 10px 0;
+	padding-top: 10px;
 }
 
 a {
@@ -75,6 +75,11 @@ hr {
 	margin-bottom: 15px;
 }
 
+.slide-title {
+	color: #7d97ad;
+	opacity: .8;
+}
+
 .splash-img {
 	max-width: 100%;
 }
@@ -96,6 +101,7 @@ hr {
 /* Media Queries */
 
 @media (max-width: 767px) {
+	/* Doubling vw's on mobile to make text more readable */
 	h1 {
 		font-size: 8.2vw;
 	}
