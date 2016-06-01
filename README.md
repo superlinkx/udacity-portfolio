@@ -8,4 +8,4 @@
 
 - or -
 
-- [Visit my site](http://superlinkx.com/udacity)
+- [Visit my site](http://superlinkx.com/portfolio)
