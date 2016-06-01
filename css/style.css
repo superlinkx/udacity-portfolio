@@ -75,7 +75,8 @@ hr {
 	margin-bottom: 15px;
 }
 
-.slide-title {
+.carousel-caption {
+	font-size: 48px;
 	background-color: #7d97ad;
 	opacity: .8;
 }
@@ -100,7 +101,7 @@ hr {
 
 /* Media Queries */
 
-@media (max-width: 767px) {
+@media screen (max-width: 767px) {
 	/* Doubling vw's on mobile to make text more readable */
 	h1 {
 		font-size: 8.2vw;
@@ -118,12 +119,16 @@ hr {
 		font-size: 5.98vw;
 	}
 
+	.carousel-caption {
+		font-size: 8.2vw;
+	}
+
 	.project-url {
 		font-size: 2.4vw;
 	}
 }
 
-@media ((min-width: 768px) and (max-width: 1170px)) {
+@media screen (min-width: 768px) and (max-width: 1170px) {
 	/* Using default size above 1170px to prevent scaling beyond Bootstrap parameters */
 	h1 {
 		font-size: 4.1vw;
@@ -139,6 +144,10 @@ hr {
 
 	h4 {
 		font-size: 2.99vw;
+	}
+
+	.carousel-caption {
+		font-size: 4.1vw
 	}
 
 	.project-url {
